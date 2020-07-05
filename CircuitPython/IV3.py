@@ -40,9 +40,9 @@ class IV3:
 
     def _I2C_read(self, data):
         self.i2c.unlock()
-        while not self.i2c.try_lock(): # Lock the I2C
+        while not self.i2c.try_lock():
             pass
-        self.i2c.readfrom_into(self.I2C_Address, data) ## Write data to 'hogger
+        self.i2c.readfrom_into(self.I2C_Address, data) ## Read data
         self.i2c.unlock()
 
 

@@ -7,8 +7,8 @@ numbs = numberWang()
 cnt = 0
 
 while True:
-    sleep(0.01)
+    sleep(0.001)
     ivClock.user_display(numbs.Wanger(cnt))
     cnt += 1
     if cnt == 10000:
-        cnt = 0
+       break
